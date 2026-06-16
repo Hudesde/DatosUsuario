@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datos del Participante — LIMA (Segunda Tanda)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <h1>Datos del Participante — LIMA</h1>
+    <p>Segunda Tanda de Pruebas de Usabilidad · Verificación del perfil de reclutamiento</p>
+  </header>
+
+  <form id="du-form" novalidate>
+    <input type="hidden" name="access_key" value="35863019-e016-432b-9d0f-0d7241045a15">
+    <input type="hidden" name="subject" id="subject" value="Datos de Participante LIMA — Segunda Tanda">
+    <input type="hidden" name="from_name" value="Datos de Participante LIMA">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+    <!-- ───────────── Datos de la sesión ───────────── -->
+    <section>
+      <h2>Datos de la sesión</h2>
+      <div class="grid2">
+        <div class="field">
+          <label for="obs">Observador / Facilitador</label>
+          <input type="text" id="obs" name="Observador" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="uid">ID del usuario (U1–U10)</label>
+          <input type="text" id="uid" name="ID_Usuario" placeholder="U__" required>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="field">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="Fecha">
+        </div>
+        <div class="field">
+          <label>Condición (modelo)</label>
+          <div class="opts">
+            <label><input type="radio" name="Condicion" value="A — DeepSeek" required> A — DeepSeek</label>
+            <label><input type="radio" name="Condicion" value="B — OpenAI GPT-4o"> B — OpenAI GPT-4o</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Datos del participante ───────────── -->
+    <section>
+      <h2>Datos del participante</h2>
+      <div class="grid2">
+        <div class="field">
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" name="Edad" min="15" max="60" inputmode="numeric" placeholder="años">
+        </div>
+        <div class="field">
+          <label>Género</label>
+          <div class="opts">
+            <label><input type="radio" name="Genero" value="Mujer"> Mujer</label>
+            <label><input type="radio" name="Genero" value="Hombre"> Hombre</label>
+            <label><input type="radio" name="Genero" value="Prefiere no decir"> Prefiere no decir</label>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label for="carrera">Carrera o área de estudio</label>
+        <input type="text" id="carrera" name="Carrera" placeholder="p. ej. Ingeniería en Computación">
+      </div>
+    </section>
+
+    <!-- ───────────── Experiencia con sistemas operativos ───────────── -->
+    <section>
+      <h2>Experiencia con sistemas operativos</h2>
+      <div class="field">
+        <label>Sistema operativo que usa habitualmente</label>
+        <div class="opts">
+          <label><input type="radio" name="SO_habitual" value="Windows"> Windows</label>
+          <label><input type="radio" name="SO_habitual" value="macOS"> macOS</label>
+          <label><input type="radio" name="SO_habitual" value="Linux"> Linux</label>
+          <label><input type="radio" name="SO_habitual" value="Otro"> Otro</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Nivel de manejo general de la computadora</label>
+        <div class="opts">
+          <label><input type="radio" name="Nivel_SO" value="Básico (navegar, carpetas, documentos)"> Básico</label>
+          <label><input type="radio" name="Nivel_SO" value="Intermedio (instalar programas, configurar)"> Intermedio</label>
+          <label><input type="radio" name="Nivel_SO" value="Avanzado (programación, redes, servidores)"> Avanzado</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Experiencia con GNU/Linux ───────────── -->
+    <section>
+      <h2>Experiencia con GNU/Linux</h2>
+      <div class="field">
+        <label>¿Ha usado GNU/Linux antes?</label>
+        <div class="opts">
+          <label><input type="radio" name="Exp_Linux" value="Nunca"> Nunca</label>
+          <label><input type="radio" name="Exp_Linux" value="Casi nunca (1–2 veces)"> Casi nunca</label>
+          <label><input type="radio" name="Exp_Linux" value="Ocasionalmente"> Ocasionalmente</label>
+          <label><input type="radio" name="Exp_Linux" value="Con frecuencia"> Con frecuencia</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Si lo ha usado, ¿para qué? <span class="sub">(dejar en blanco si nunca)</span></label>
+        <input type="text" name="Exp_Linux_uso" placeholder="p. ej. clase de redes, servidor casero…">
+      </div>
+    </section>
+
+    <!-- ───────────── Línea de comandos ───────────── -->
+    <section>
+      <h2>Uso de la línea de comandos</h2>
+      <div class="field">
+        <label>¿Con qué frecuencia usa la terminal o línea de comandos?</label>
+        <div class="opts">
+          <label><input type="radio" name="Terminal_frecuencia" value="Nunca"> Nunca</label>
+          <label><input type="radio" name="Terminal_frecuencia" value="Raramente (alguna vez)"> Raramente</label>
+          <label><input type="radio" name="Terminal_frecuencia" value="A veces"> A veces</label>
+          <label><input type="radio" name="Terminal_frecuencia" value="A menudo"> A menudo</label>
+          <label><input type="radio" name="Terminal_frecuencia" value="Es mi herramienta principal"> Es mi herramienta principal</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>¿Tiene formación en administración de sistemas o redes?</label>
+        <div class="opts">
+          <label><input type="radio" name="Admin_sistemas" value="No"> No</label>
+          <label><input type="radio" name="Admin_sistemas" value="Básica (alguna materia)"> Básica</label>
+          <label><input type="radio" name="Admin_sistemas" value="Sí, es parte de mis estudios/trabajo"> Sí</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Motivación ───────────── -->
+    <section>
+      <h2>Motivación para aprender Linux</h2>
+      <div class="field">
+        <label>¿Por qué necesita o le gustaría aprender GNU/Linux?</label>
+        <div class="opts">
+          <label><input type="radio" name="Motivacion_razon" value="Lo requiero en una materia o trabajo"> Materia / trabajo</label>
+          <label><input type="radio" name="Motivacion_razon" value="Interés personal"> Interés personal</label>
+          <label><input type="radio" name="Motivacion_razon" value="Solo curiosidad, no lo necesito"> Solo curiosidad</label>
+          <label><input type="radio" name="Motivacion_razon" value="No lo había pensado"> No lo había pensado</label>
+        </div>
+      </div>
+      <div class="field likert">
+        <label>¿Qué tanto le interesa aprender a usar Linux? <span class="sub">(1 nada · 5 muchísimo)</span></label>
+        <div class="opts" data-likert="Motivacion_interes"></div>
+      </div>
+    </section>
+
+    <!-- ───────────── Decisión del facilitador ───────────── -->
+    <section>
+      <h2>Decisión del facilitador</h2>
+      <p class="hint">No leer al usuario.</p>
+      <div class="field">
+        <label>¿El participante cumple el perfil de reclutamiento?</label>
+        <div class="opts">
+          <label><input type="radio" name="Cumple_perfil" value="Sí — incluir"> Sí (incluir)</label>
+          <label><input type="radio" name="Cumple_perfil" value="No — excluir"> No (excluir)</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Si no cumple, motivo <span class="sub">(puede marcar más de uno)</span></label>
+        <div class="checks">
+          <label><input type="checkbox" name="Excl_edad" value="Fuera del rango de edad (18–25)"> Fuera del rango de edad (18–25)</label>
+          <label><input type="checkbox" name="Excl_linux" value="Experiencia excesiva en Linux"> Experiencia excesiva en Linux</label>
+          <label><input type="checkbox" name="Excl_terminal" value="Uso habitual de la línea de comandos"> Uso habitual de la línea de comandos</label>
+          <label><input type="checkbox" name="Excl_so" value="No maneja ningún SO de escritorio a nivel usuario"> No maneja ningún SO de escritorio a nivel usuario</label>
+          <label><input type="checkbox" name="Excl_motivacion" value="Sin motivación para aprender Linux"> Sin motivación para aprender Linux</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Observaciones del facilitador</label>
+        <textarea name="Facilitador_notas" placeholder="Cualquier dato relevante sobre el perfil del participante…"></textarea>
+      </div>
+    </section>
+
+    <div class="submitbar">
+      <button type="submit" class="send" id="send-btn">📨 Enviar al correo</button>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </div>
+  </form>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
